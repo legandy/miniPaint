@@ -13,7 +13,7 @@ function GUI_CLASS() {
 	/**
 	 * preview mini window size on right sidebar
 	 */
-	this.PREVIEW_SIZE = {w: 148, h: 100};
+	this.PREVIEW_SIZE = {w: 146, h: 100};
 	
 	/**
 	 * last used menu id
@@ -74,7 +74,7 @@ function GUI_CLASS() {
 		var html = '';
 		for (var i in DRAW_TOOLS_CONFIG) {
 			html += '<a title="' + DRAW_TOOLS_CONFIG[i].title + '"';
-			html += ' style="background: #989898 url(\'img/' + DRAW_TOOLS_CONFIG[i].icon[0] + '\') no-repeat ' + DRAW_TOOLS_CONFIG[i].icon[1] + 'px ' + DRAW_TOOLS_CONFIG[i].icon[2] + 'px;"';
+			html += ' style="background: #ffffff url(\'img/' + DRAW_TOOLS_CONFIG[i].icon[0] + '\') no-repeat ' + DRAW_TOOLS_CONFIG[i].icon[1] + 'px ' + DRAW_TOOLS_CONFIG[i].icon[2] + 'px;"';
 			if (DRAW_TOOLS_CONFIG[i].name == active_tool)
 				html += ' class="active trn"';
 			else
@@ -88,11 +88,10 @@ function GUI_CLASS() {
 		//draw colors
 		var html = '';
 		var colors_data = [
-			['#ff0000', '#ff5b31', '#ffa500', '#ff007f', '#ff00ff'], //red
-			['#00ff00', '#008000', '#7fff00', '#00ff7f', '#8ac273'], //green
-			['#0000ff', '#007fff', '#37629c', '#000080', '#8000ff'], //blue
-			['#ffff00', '#ffff80', '#ddd06a', '#808000', '#bcb88a'], //yellow
-			['#ffffff', '#c0c0c0', '#808080', '#404040', '#000000'], //grey
+			['#ff0000', '#ff5b31', '#ffa500', '#ff007f', '#ff00ff', '#e4e4e4'], //red
+			['#00ff00', '#008000', '#7fff00', '#00ff7f', '#8ac273', '#c0c0c0'], //green
+			['#0000ff', '#007fff', '#37629c', '#000080', '#8000ff', '#808080'], //blue
+			['#ffff00', '#ffff80', '#ddd06a', '#808000', '#bcb88a', '#404040'], //yellow
 		];
 		for (var i in colors_data) {
 			for (var j in colors_data[i]) {
@@ -499,7 +498,7 @@ function GUI_CLASS() {
 			if (this.action_data().attributes[k] === true || this.action_data().attributes[k] === false) {
 				//true / false
 				if (this.action_data().attributes[k] == true)
-					html += '<div onclick="GUI.update_attribute(this, 1)" style="background-color:#5680c1;" class="attribute-area trn" id="' + k + '">' + title + '</div>';
+					html += '<div onclick="GUI.update_attribute(this, 1)" style="background-color:#edeef0;" class="attribute-area trn" id="' + k + '">' + title + '</div>';
 				else
 					html += '<div onclick="GUI.update_attribute(this, 0)" class="attribute-area trn" id="' + k + '">' + title + '</div>';
 			}
