@@ -10,20 +10,20 @@
 <link rel="shortcut icon" href="img/favicon.png" />
 <!-- Google -->
 <meta itemprop="name" content="myBrush" />
-<meta itemprop="description" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta itemprop="description" content="myBrush is free online image editor to create stickers for WhatsApp, Telegram, Kik, Viber, Snapchat and WeChat. Edit, adjust your images, add effects online in your browser." />
 <meta itemprop="image" content="https://clilk.com/brush/img/preview.gif" />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="myBrush" />
-<meta name="twitter:description" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta name="twitter:description" content="myBrush is free online image editor to create stickers for WhatsApp, Telegram, Kik, Viber, Snapchat and WeChat. Edit, adjust your images, add effects online in your browser." />
 <meta name="twitter:image" content="https://clilk.com/brush/img/preview.gif" />
-<meta name="twitter:image:alt" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta name="twitter:image:alt" content="myBrush is free online image editor to create stickers for WhatsApp, Telegram, Kik, Viber, Snapchat and WeChat. Edit, adjust your images, add effects online in your browser." />
 <!-- Facebook, Pinterest -->
 <meta property="og:title" content="myBrush" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://viliusle.github.io/myBrush/" />
 <meta property="og:image" content="https://clilk.com/brush/img/preview.gif" />
-<meta property="og:description" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta property="og:description" content="myBrush is free online image editor to create stickers for WhatsApp, Telegram, Kik, Viber, Snapchat and WeChat. Edit, adjust your images, add effects online in your browser." />
 <meta property="og:site_name" content="myBrush" />
 </head>
 <body>
@@ -58,7 +58,7 @@
         </div>
         <div style="clear:both;"></div>
         <div class="block" id="all_colors"></div>
-        <div class="block">
+        <div class="block" id="fb-welcome">
             <div id="main_color_container">
                 <input type="color" id="main_color" value="#1984bb" onchange="GUI.set_color(this);"/>
                 <div style="display:none;" id="main_color_alt" onclick="GUI.toggle_color_select();"></div>
@@ -145,6 +145,9 @@
 	<a class="right_mobile_menu" onclick="GUI.toggle('#sidebar_right');return false;" href="#"></a>
 </div>
 <div id="main_menu" class="ddsmoothmenu">
+	<div class="logo">
+		
+	</div>
 	<ul>
 	<li>
 		<a class="icon file trn" href="#">File</a>
@@ -287,9 +290,6 @@
 
 		</ul>
 	</li>
-	<li>
-		<a class="trn" onclick="call_menu(HELP, 'help_about');" href="#">About</a>
-	</li>
 	</ul>
 </div>
 <div style="display:none;" id="tmp"></div>
@@ -323,9 +323,8 @@
 <script src="js/tools.js"></script>
 <script src="js/draw_tools.js"></script>
 <script src="js/gui.js"></script>
-<script src="js/help.js"></script>
 <script src="js/events.js"></script>
-
+<script src="js/help.js"></script>
 <script src="config.js"></script>
 <script src="js/main.js"></script>
 </body>

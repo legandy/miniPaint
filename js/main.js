@@ -56,10 +56,5 @@ function MAIN_CLASS() {
 		}
 		canvas_grid.globalAlpha = 0.8;
 		
-		//init translation
-		var lang_cookie = HELPER.getCookie('language');
-		if(lang_cookie != '')
-			LANG = lang_cookie.replace(/([^a-z]+)/gi, '');
-		HELP.help_translate(LANG);
 	};
 }

@@ -539,8 +539,7 @@ function GUI_CLASS() {
 		}
 		document.getElementById("action_attributes").innerHTML = html;
 		
-		//retranslate
-		HELP.help_translate(LANG);
+
 	};
 	
 	this.set_color = function (object) {

@@ -86,21 +86,15 @@ input[type="button"]{
 
 /* ========== 2. Header ===================================================== */
 
-#logo{
-	display: block;
-	height: 30px;
-	padding: 5px 5px 5px 36px;
-	margin: 5px 0 10px 0;
-	background: url("../img/logo.svg") no-repeat 3px 0px;
-	background-size: auto 30px;
-	text-decoration: none;
-	font-weight: bold;
-	color: #ffffff;
-	font-size: 13px;
+.logo{
+	z-index: 101;
+	display: inline-block;
+	height: 28px;
+	width: 48px;
+	margin: 8px 48px 4px 52px;
+	background: url("../img/logo.svg") no-repeat 0px 0px;
 }
-#logo:hover{
-	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-}
+
 @keyframes shake{
 	10%, 90%{
 		background-position: 2px 0px;
@@ -153,7 +147,8 @@ input[type="button"]{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	height:46px;
+	height:44px;
+	display: inline-block;
 }
 .ddsmoothmenu ul li{
 	position: relative;	
@@ -353,7 +348,7 @@ input[type="button"]{
 	width: 160px;
 	z-index: 100;
 	left:0px;
-	padding:4px;
+	padding:0 4px;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 }
@@ -363,8 +358,7 @@ input[type="button"]{
 	right:0;
 	top:0;
 	z-index: 100;
-	padding:6px 0 4px 8px;
-	margin-top:2px;
+	padding:0 0 4px 8px;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 }
@@ -445,7 +439,7 @@ input[type="button"]{
 	width:34px;
 	height:34px;
 	border-radius:4px;
-	margin: 4px 4px 0 0;
+	margin: 0 4px 4px 0;
 	overflow:hidden;
 	display:block;
 }
