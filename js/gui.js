@@ -504,7 +504,7 @@ function GUI_CLASS() {
 			}
 			else if (typeof GUI.action_data().attributes[k] == 'object') {
 				//drop down select
-				html += '<select style="font-size:11px;margin-bottom:10px;" onchange="GUI.update_attribute(this);" id="' + k + '">';
+				html += '<select style="font-size:15px;margin-bottom:10px;width:120px;height:28px;background-color:#edeef0;" onchange="GUI.update_attribute(this);" id="' + k + '">';
 				for (var j in GUI.action_data().attributes[k]) {
 					var sel = '';
 					var key = k.replace("_values", "");
@@ -518,7 +518,7 @@ function GUI_CLASS() {
 				//color
 				html += '<table style="width:100%;">';	//table for 100% width
 				html += '<tr>';
-				html += '<td style="font-weight:bold;width:45px;">' + title + ':</td>';
+				html += '<td style="width:45px;">' + title + ':</td>';
 				html += '<td><input onchange="GUI.update_attribute(this);" type="color" id="' + k + '" value="' + GUI.action_data().attributes[k] + '" /></td>';
 				html += '</tr>';
 				html += '</table>';
@@ -528,12 +528,12 @@ function GUI_CLASS() {
 				html += '<div id="' + k + '_container">';
 				html += '<table style="width:100%;">';	//table for 100% width
 				html += '<tr>';
-				html += '<td style="font-weight:bold;padding-right:2px;white-space:nowrap;" class="trn">' + title + ':</td>';
+				html += '<td style="text-transform:uppercase;white-space:nowrap;" class="trn">' + title + ':</td>';
 				html += '<td><input onchange="GUI.update_attribute(this);" type="number" id="' + k + '" value="' + GUI.action_data().attributes[k] + '" /></td>';
 				html += '</tr>';
 				html += '</table>';
 				html += '<div style="float:left;width:32px;" onclick="GUI.update_attribute(this, 1)" class="attribute-area" id="' + k + '">+</div>';
-				html += '<div style="margin-left:48px;margin-bottom:15px;" onclick="GUI.update_attribute(this, -1)" class="attribute-area" id="' + k + '">-</div>';
+				html += '<div style="margin-left:48px;margin-bottom:10px;" onclick="GUI.update_attribute(this, -1)" class="attribute-area" id="' + k + '">-</div>';
 				html += '</div>';
 			}
 		}

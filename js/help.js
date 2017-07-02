@@ -33,12 +33,11 @@ function HELP_CLASS() {
 	};
 	//about
 	this.help_about = function () {
-		var email = 'www.viliusl@gmail.com';
-		POP.add({title: "Name:", value: "miniPaint"});
+		var email = 'info@clilk.com';
+		POP.add({title: "Name:", value: "myBrush"});
 		POP.add({title: "Version:", value: VERSION});
-		POP.add({title: "Author:", value: 'ViliusL'});
+		POP.add({title: "Description:", value: 'Free online image editor'});
 		POP.add({title: "Email:", html: '<a href="mailto:' + email + '">' + email + '</a>'});
-		POP.add({title: "GitHub:", html: '<a href="https://github.com/viliusle/miniPaint">http://github.com/viliusle/miniPaint</a>'});
 		POP.show('About', '');
 	};
 	

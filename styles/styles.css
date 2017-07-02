@@ -363,7 +363,7 @@ input[type="button"]{
 	right:0;
 	top:0;
 	z-index: 100;
-	padding:4px;
+	padding:6px 0 4px 8px;
 	margin-top:2px;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
@@ -451,9 +451,10 @@ input[type="button"]{
 }
 #action_attributes{
 	min-height:20px;
-	font-size:11px;
+	font-size:15px;
 }
 #mouse_info{
+	margin-top:16px;
 	font-size:15px;
 	text-transform: uppercase;
 	overflow: hidden;
@@ -462,8 +463,8 @@ input[type="button"]{
 	font-size:11px;
 }
 #action_attributes input{
-	font-size:12px;
-	width:100%;
+	font-size:15px;
+	width:64px;
 }
 #color_hex{
 	width: 100%;
@@ -474,15 +475,14 @@ input[type="button"]{
 	letter-spacing: 1px;
 }
 #sidebar_right .layer{
-	margin-bottom:2px;
-	border:1px solid #ebebeb;
-	background-color:#ffffff;
-	padding:1px 5px 3px 5px;
-	border-radius:3px;
-	font-size:11px;
-	height:19px;
-	overflow:hidden;
-	color:#333333;
+	margin-bottom: 2px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 3px 5px 0px 8px;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 28px;
+    overflow: hidden;
 }
 #layers_base .active{
 	background-color:#edeef0;
@@ -552,7 +552,7 @@ input[type="button"]{
 	border:1px solid #ebebeb;
 	background-color:#ffffff;
 	border-radius:4px;
-	margin:5px 5px 5px 5px;
+	margin: 8px 0 4px 0;
 	text-align:center;
 	padding:5px 0px 5px 0px;
 	cursor:pointer;
@@ -663,9 +663,10 @@ input[type="button"]{
 	font-weight:bold;
 }
 .group{
-	border:1px solid #888888;
-	margin:5px 0px 5px 0px;
-	padding:5px;
+    border: 1px solid #e4e4e4;
+    margin: 8px 0px 7px 0px;
+    padding: 8px;
+    border-radius: 4px;
 }
 @media screen and (max-width:700px){
 	body{
@@ -689,7 +690,7 @@ input[type="button"]{
 	top: 128px;
 	left: calc(50% - 500px / 2);
 	background-color: #ffffff;
-	border-radius: 4px;
+	border-radius: 8px;
 	width:500px;
 	max-width: 100%;
 	max-height:550px;
@@ -710,17 +711,20 @@ input[type="button"]{
 	height:20px;
 }
 #popup textarea{
-	color:#000000;
 	width:100%;
 	border:1px solid #ebebeb;
 	padding-left:5px;
 }
 #popup .button{
-	margin-right:5px;
-	background-color:#edeef0;
-	min-width:60px;
-	border:1px solid #000000;
-	padding: 2px 6px;
+    margin: 8px 8px;
+    min-width: 92px;
+	background-color: #edeef0;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding: 4px 4px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
 }
 #popup input[type="text"], #popup input[type="number"], #popup textarea{
 	width:100%;

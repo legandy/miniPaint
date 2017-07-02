@@ -562,7 +562,7 @@ function FILE_CLASS() {
 		export_data.info = {
 			width: WIDTH,
 			height: HEIGHT,
-			about: 'Image data with multi-layers. Can be opened using miniPaint, https://github.com/viliusle/miniPaint',
+			about: 'Image data with multi-layers. Can be opened using myBrush, https://clilk.com/brush',
 			date: today,
 		};
 

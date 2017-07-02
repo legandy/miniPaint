@@ -9,24 +9,43 @@
 <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 <link rel="shortcut icon" href="img/favicon.png" />
 <!-- Google -->
-<meta itemprop="name" content="miniPaint" />
-<meta itemprop="description" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
-<meta itemprop="image" content="http://viliusle.github.io/miniPaint/img/preview.gif" />
+<meta itemprop="name" content="myBrush" />
+<meta itemprop="description" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta itemprop="image" content="https://clilk.com/brush/img/preview.gif" />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="miniPaint" />
-<meta name="twitter:description" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
-<meta name="twitter:image" content="http://viliusle.github.io/miniPaint/img/preview.gif" />
-<meta name="twitter:image:alt" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta name="twitter:title" content="myBrush" />
+<meta name="twitter:description" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta name="twitter:image" content="https://clilk.com/brush/img/preview.gif" />
+<meta name="twitter:image:alt" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
 <!-- Facebook, Pinterest -->
-<meta property="og:title" content="miniPaint" />
+<meta property="og:title" content="myBrush" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://viliusle.github.io/miniPaint/" />
-<meta property="og:image" content="http://viliusle.github.io/miniPaint/img/preview.gif" />
-<meta property="og:description" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
-<meta property="og:site_name" content="miniPaint" />
+<meta property="og:url" content="http://viliusle.github.io/myBrush/" />
+<meta property="og:image" content="https://clilk.com/brush/img/preview.gif" />
+<meta property="og:description" content="myBrush is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+<meta property="og:site_name" content="myBrush" />
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '238932346615090',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <div id="wrapper">
     <div id="sidebar_left">
         <div id="menu_left_container">
@@ -91,21 +110,9 @@
                        step="50" oninput="GUI.zoom(this.value, true);"/>
             </div>
         </div>
-        <div class="block" id="mouse_info">
-            <span class="trn mouse_info_title">Size:</span>
-            <span id="mouse_info_size"></span><br/>
+        <div class="block">
+			<div id="action_attributes"></div>
 
-            <span style="font-size:11px;" class="trn mouse_info_title">Mouse:</span>
-            <span id="mouse_info_mouse"></span><br/>
-
-            <div style="display:none;" id="mouse_info_selected">
-                <br/>
-                <span class="mouse_info_title">XY:</span>
-                <span id="mouse_info_xy"></span><br/>
-
-                <span class="trn mouse_info_title">Area:</span>
-                <span id="mouse_info_area"></span><br/>
-            </div>
             <div id="layers_base">
                 <a class="trn">Layers</a> <a title="Add new layer" class="layers_opt"
                                              onclick="EDIT.save_state();LAYER.layer_add();return false;" href="#">+</a>
@@ -113,8 +120,24 @@
                    href="#">&uarr;</a>
                 <div style="margin-top:5px;" id="layers"></div>
             </div>
+			<div id="mouse_info">
+				<span class="trn mouse_info_title">Size:</span>
+				<span id="mouse_info_size"></span><br/>
+
+				<span style="font-size:11px;" class="trn mouse_info_title">Mouse:</span>
+				<span id="mouse_info_mouse"></span><br/>
+
+				<div style="display:none;" id="mouse_info_selected">
+					<br/>
+					<span class="mouse_info_title">XY:</span>
+					<span id="mouse_info_xy"></span><br/>
+
+					<span class="trn mouse_info_title">Area:</span>
+					<span id="mouse_info_area"></span><br/>
+				</div>
+			</div>
         </div>
-        <div class="block" id="action_attributes"></div>
+        
     </div>
 </div>
 <div id="mobile_menu">
