@@ -23,7 +23,7 @@ body{
 	color: #666666;
 	margin: 0px;
 	padding-top: 54px;
-	background-color: #edeef0;
+	background-color: #ffffff;
 	overflow: hidden;
 }
 canvas{
@@ -84,14 +84,15 @@ input[type="button"]{
 	background: #edeef0;
 }
 
+
 /* ========== 2. Header ===================================================== */
 
 .logo{
 	z-index: 101;
 	display: inline-block;
-	height: 28px;
-	width: 48px;
-	margin: 8px 48px 4px 52px;
+	height: 24px;
+	width: 128px;
+	margin: 12px 20px 8px 16px;
 	background: url("../img/logo.svg") no-repeat 0px 0px;
 }
 
@@ -120,15 +121,14 @@ input[type="button"]{
 }
 .left_mobile_menu, .right_mobile_menu{
 	position:absolute;
-	background: url('../img/sprites.svg') no-repeat -50px -100px;
 	width:50px;
 	height:50px;
 	display:block;
-	top:0;
+	top:12px;
 	z-index:200;
 }
-.left_mobile_menu{left:0;}
-.right_mobile_menu{right:0;}
+.left_mobile_menu{left:12px;background: url('../img/sprites.svg') no-repeat -50px -100px;}
+.right_mobile_menu{right:0;background: url('../img/sprites.svg') no-repeat 0px -100px;}
 
 .ddsmoothmenu{
 	position: fixed;
@@ -144,16 +144,15 @@ input[type="button"]{
 }
 .ddsmoothmenu ul{
 	z-index:100;
-	margin: 0;
+	margin: 6px;
 	padding: 0;
 	list-style-type: none;
-	height:44px;
+	position: absolute;
 	display: inline-block;
 }
 .ddsmoothmenu ul li{
 	position: relative;	
 	display: inline-block;
-	float: left;
 	color: #2d2b2b;
 	height:100%;
 }
@@ -169,7 +168,6 @@ input[type="button"]{
     text-decoration: none;
     text-align: center;
     padding: 8px 16px !important;
-    margin-top: 6px;
 }
 .ddsmoothmenu ul li a.selected{
 	background-color: #FFFFFF !important;
@@ -256,6 +254,9 @@ input[type="button"]{
 	content: "...";
 }
 @media screen and (max-width:700px){
+	.logo {
+		display: none;
+	}
 	#mobile_menu{
 		display:block;
 	}
@@ -271,7 +272,6 @@ input[type="button"]{
 	}
 	.ddsmoothmenu > ul > li > a{
 		height:50px;
-		padding-top: 15px !important;
 	}
 	.ddsmoothmenu ul li ul{
 		top:50px !important;
@@ -284,6 +284,9 @@ input[type="button"]{
 	}
 }
 @media screen and (max-width:550px){
+	.logo {
+		display: none;
+	}
 	.ddsmoothmenu{
 		padding-left:0;
 	}
@@ -305,8 +308,16 @@ input[type="button"]{
 	}
 }
 @media screen and (max-width:400px){
+	.logo {
+		display: none;
+	}
 	.ddsmoothmenu{
-		background: #666666;
+		background: #ffffff;
+	}
+	.ddsmoothmenu ul{
+		width: calc(100% - 100px);
+		margin-left:50px;
+		margin-top: 0;
 	}
 	.ddsmoothmenu > ul > li{
 		width: calc(100% / 7);
@@ -330,6 +341,7 @@ input[type="button"]{
 	.ddsmoothmenu .help{ background-position: -391px -88px; }
 }
 @media screen and (max-width:350px){
+	.logo {display: none;}
 	.ddsmoothmenu .file{ background-position: -95px -88px; }
 	.ddsmoothmenu .edit{ background-position: -145px -88px; }
 	.ddsmoothmenu .image{ background-position: -195px -88px; }
@@ -348,9 +360,9 @@ input[type="button"]{
 	width: 160px;
 	z-index: 100;
 	left:0px;
-	padding:0 4px;
-	transition: 0.2s;
-	-webkit-transition: 0.2s;
+	padding:0 4px 8px 4px;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
 }
 #sidebar_right{
 	position: absolute;
@@ -358,30 +370,30 @@ input[type="button"]{
 	right:0;
 	top:0;
 	z-index: 100;
-	padding:0 0 4px 8px;
-	transition: 0.2s;
-	-webkit-transition: 0.2s;
+	padding:0 0 8px 8px;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
 }
 #sidebar_left.active{
 	left:0 !important;
-	background-color: #fbfbfb;
-	box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.75);
+	background-color: #fff;
+	box-shadow: 0px 4px 32px -8px rgba(0,0,0,0.75);
 }
 #sidebar_right.active{
 	right:0 !important;
-	box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.75);
+	background-color: #fff;
+	box-shadow: 0px 4px 32px -8px rgba(0,0,0,0.75);
 }
 #main_color{
-	border: none;
-	margin-top: 10px;
-	background-color: white;
-	width: 48px;
-	height: 108px;
-	margin: 0px;
-	border-radius: 50%;
-	padding: 0px;
-	position: absolute;
-	outline: none;
+
+    border-radius: 4px;
+    border-color: #ebebeb;
+    background-color: #edeef0;
+    width: 48px;
+    height: 108px;
+    margin: 0px;
+    position: absolute;
+    outline: none;
 }
 #main_color_alt{
 	border:1px solid #ebebeb;
@@ -494,7 +506,6 @@ input[type="button"]{
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
-	float:right;
 }
 .layer_title{
 	display:block;
@@ -508,16 +519,16 @@ input[type="button"]{
 	float:right;
 	cursor:pointer;
 	padding:0px 3px 0px 3px;
-	width:12px;
-	height:12px;
+	width:18px;
+	height:18px;
 	background: url('../img/sprites.svg') no-repeat 0px -50px;
 }
 .layer_visible{
 	float:right;
 	cursor:pointer;
 	padding:0px 3px 0px 3px;
-	width:12px;
-	height:12px;
+	width:18px;
+	height:18px;
 	background: url('../img/sprites.svg') no-repeat -100px -50px;
 }
 .layer_unvisible{
@@ -533,9 +544,9 @@ input[type="button"]{
 	color:#666666;
 }
 .mini-color{
-	width: 16px;
-	height: 16px;
-	margin: 2px;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
 	border-radius: 50%;
 	float: left;
 }
@@ -550,9 +561,7 @@ input[type="button"]{
 	text-align:center;
 	padding:5px 0px 5px 0px;
 	cursor:pointer;
-	/* disable select */
-	-webkit-user-select:none;
-	-moz-user-select:none;
+
 }
 
 
@@ -563,7 +572,7 @@ input[type="button"]{
 }
 @media screen and (max-width:550px){
 	#sidebar_left{
-		left: -110px;
+		left: -160px;
 	}
 }
 
@@ -639,7 +648,6 @@ input[type="button"]{
 #canvas_grid{
 	pointer-events:none;
 }
-.trn{}
 .block{
 	border:1px solid #ebebeb;
 	padding:13px;

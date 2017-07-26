@@ -88,10 +88,10 @@ function GUI_CLASS() {
 		//draw colors
 		var html = '';
 		var colors_data = [
-			['#ff0000', '#ff5b31', '#ffa500', '#ff007f', '#ff00ff', '#e4e4e4'], //red
-			['#00ff00', '#008000', '#7fff00', '#00ff7f', '#8ac273', '#c0c0c0'], //green
-			['#0000ff', '#007fff', '#37629c', '#000080', '#8000ff', '#808080'], //blue
-			['#ffff00', '#ffff80', '#ddd06a', '#808000', '#bcb88a', '#404040'], //yellow
+			['#ff0000', '#ff5b31', '#ffa500', '#ff007f'], //red
+			['#00ff00', '#008000', '#7fff00', '#00ff7f'], //green
+			['#0000ff', '#007fff', '#37629c', '#000080'], //blue
+			['#ffff00', '#ffff80', '#ddd06a', '#808000'], //yellow
 		];
 		for (var i in colors_data) {
 			for (var j in colors_data[i]) {

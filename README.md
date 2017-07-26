@@ -1,16 +1,16 @@
-# miniPaint
+# myBrush
+
+![myBrushLogo](https://raw.githubusercontent.com/legandy/myBrush/master/img/preview.png)
 
 Online graphics editing tool lets create, edit images using HTML5 technologies.
 No need to buy, download, install or have obsolete flash.
 Key features: layers, drag & drop, transparency, filters, no-flash, open source. 
 
-miniPaint operates directly in the browser. You can create images, paste from clipboard (ctrl+v) or upload from computer (using menu or drag & drop). Nothing will be sent to any server. Everything stays in your browser. 
+myBrush operates directly in the browser. You can create images, paste from clipboard (ctrl+v) or upload from computer (using menu or drag & drop). Nothing will be sent to any server. Everything stays in your browser. 
 
-**Start using**: **http://viliusle.github.io/miniPaint/**
+**Start using**: **https://clilk.com/brush/**
 
-![miniPaint](https://raw.githubusercontent.com/viliusle/miniPaint/master/img/preview.gif)
-
-**Change log:** [/miniPaint/releases](https://github.com/viliusle/miniPaint/releases)
+![myBrush](https://raw.githubusercontent.com/legandy/myBrush/master/img/preview.gif)
 
 ## Browser Support
 - Firefox
@@ -57,29 +57,25 @@ miniPaint operates directly in the browser. You can create images, paste from cl
 - **Effects**: Black and White, Blur (box, Gaussian, stack, zoom), Bulge/Pinch, Colorize, Denoise, Desaturate, Dither, Dot Screen, Edge, Emboss, Enrich, Gamma, Grains, GrayScale, Heatmap, JPG Compression, Mosaic, Oil, Perspective, Sepia, Sharpen, Solarize, Tilt Shift, Vignette, Vibrance, Vintage,
 - Print support.
 
-### Embed
-
-To embed this app in other page, use this HTML code:
-
-    <iframe style="width:100%; height:35vw;" src="https://viliusle.github.io/miniPaint/"></iframe>
-
 ### License
 
-    Copyright (C) 2013-2016 ViliusL
+    Copyright (C) 2013-2016 LegAndy
 
-    miniPaint is free software: you can redistribute it and/or modify
+    myBrush is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    miniPaint is distributed in the hope that it will be useful,
+    myBrush is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with miniPaint.  If not, see <http://www.gnu.org/licenses/>.
+    along with myBrush.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Support
 
-Please use the GitHub issues for support requests, or use mail www.viliusl@gmail.com for contacts.
+![myBrush](https://raw.githubusercontent.com/legandy/myBrush/master/img/preview.png)
+
+Please use the GitHub issues for support requests, or use mail andylegenki@gmail.com for contacts.
