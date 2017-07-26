@@ -1,6 +1,6 @@
 # myBrush
 
-![myBrushLogo](https://raw.githubusercontent.com/legandy/myBrush/master/img/preview.png)
+![myBrushLogo](https://raw.githubusercontent.com/legandy/myBrush/master/img/header.png)
 
 Online graphics editing tool lets create, edit images using HTML5 technologies.
 No need to buy, download, install or have obsolete flash.
