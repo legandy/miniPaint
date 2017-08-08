@@ -245,7 +245,7 @@ input[type="button"]{
 .ddsmoothmenu ul li ul li.more > a{
 	background-image: url('../img/right.svg');
 	background-repeat: no-repeat;
-	background-position: 97% 30%;
+	background-position: 90% 50%;
 }
 .ddsmoothmenu ul li ul li ul{
 	left: calc(100% + 1px) !important;

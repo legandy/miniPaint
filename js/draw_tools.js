@@ -591,7 +591,7 @@ function DRAW_TOOLS_CLASS() {
 			POP.add({name: "size", title: "Size:", value: size, range: [2, 1000], step: 2});
 			POP.add({name: "color", title: "Color:", value: color, type: "color"});
 			POP.add({name: "style", title: "Font style:", values: ["Normal", "Italic", "Bold", "Bold Italic"], type: 'select'});
-			POP.add({name: "family", title: "Font family:", values: ["Arial", "Courier", "Impact", "Helvetica", "monospace", "Times New Roman", "Verdana"], type: 'select'});
+			POP.add({name: "family", title: "Font family:", values: ["Arial", "Courier", "Impact", "Helvetica", "Times New Roman", "Verdana", "Trebuchet MS", "Garamond", "Palatino", "Tahoma", "Andale Mono"], type: 'select'});
 			
 			POP.add({name: "pos_x", title: "Position X:", value: xx, range: [0, WIDTH], step: 1});
 			POP.add({name: "pos_y", title: "Position Y:", value: yy, range: [0, HEIGHT], step: 1});
