@@ -476,7 +476,8 @@ input[type="button"]{
 	width: 100%;
 	margin-top: 8px;
 	font-size: 24px;
-	font-weight: 100;
+	font-weight: 400;
+	font-family: 'Lato';
 	text-align: center;
 	letter-spacing: 1px;
 }
@@ -508,11 +509,12 @@ input[type="button"]{
 	border-radius: 50%;
 }
 .layer_title{
-	display:block;
-	float:left;
-	cursor:pointer;
-	min-width:64px;
-	overflow:hidden;
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .layer_delete{
@@ -614,7 +616,7 @@ input[type="button"]{
 /* ========== 6. Content ==================================================== */
 
 #wrapper{
-	margin: 5px;
+	margin: 8px;
 	position:relative;
 	/*min-height: 500px;*/
 	overflow: hidden;
@@ -695,7 +697,7 @@ input[type="button"]{
 	border-radius: 8px;
 	width:500px;
 	max-width: 100%;
-	max-height:550px;
+	max-height:600px;
 	overflow-y:scroll;
 	margin:0px auto 0px auto;
 	padding:10px;
@@ -707,7 +709,7 @@ input[type="button"]{
 	margin-top:0px;
 	cursor:move;
 	font-size: 24px;
-	font-weight: 100;
+	font-weight: 400;
 }
 #popup td{
 	height:20px;
