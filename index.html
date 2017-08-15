@@ -26,13 +26,23 @@
 <meta property="og:image" content="https://mbrsh.com/editor/img/preview.png" />
 </head>
 <body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '238932346615090',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
+	<div id="fb-root"></div>
+	<script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=238932346615090";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script>
+  		window.fbAsyncInit = function() {
+    	FB.init({
+      	appId      : '238932346615090',
+      	xfbml      : true,
+      	version    : 'v2.9'
+    	});
 
     // ADD ADDITIONAL FACEBOOK CODE HERE
   };
@@ -46,6 +56,7 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="wrapper">
+
     <div id="sidebar_left">
         <div id="menu_left_container">
             <noscript>
@@ -289,6 +300,14 @@
 		</ul>
 	</li>
 	</ul>
+	<div class="fb-like"
+	data-href="https://apps.facebook.com/mybrush/"
+	data-layout="button_count"
+	data-action="like"
+	data-size="large"
+	data-show-faces="true"
+	data-share="true">
+	</div>
 </div>
 <div style="display:none;" id="tmp"></div>
 <div id="popup"></div>

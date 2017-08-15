@@ -96,6 +96,13 @@ input[type="button"]{
 	background: url("../img/logo.svg") no-repeat 0px 0px;
 }
 
+.fb-like {
+    position: absolute !important;
+    display: block !important;
+    top: 9px;
+    right: 11px;
+}
+
 @keyframes shake{
 	10%, 90%{
 		background-position: 2px 0px;
