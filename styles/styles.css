@@ -99,7 +99,7 @@ input[type="button"]{
 .fb-like {
     position: absolute !important;
     display: block !important;
-    top: 9px;
+    top: 20px;
 	right: 11px;
 }
 
