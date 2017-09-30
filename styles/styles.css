@@ -446,6 +446,17 @@ input[type="button"]{
 
 /* ========== 3. Footer ===================================================== */
 
+.post-to-facebook{
+	z-index: 101;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 40px;
+    height: 40px;
+    width: 100%;
+    background: url(../img/post-to-facebook.svg) no-repeat center;
+}
+
+
 /* ========== 4. Sidebar ==================================================== */
 
 #sidebar_left{
