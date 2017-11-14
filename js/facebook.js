@@ -50,7 +50,7 @@ function FACEBOOK_CLASS() {
 
 		$('.facebook-post-button').click(function(e) {
 			e.preventDefault();
-		      	_self.statusChangeCallback(response);
+		      	_self.statusChangeCallback();
 		});
 	}();
 
