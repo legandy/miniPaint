@@ -104,7 +104,7 @@ function FACEBOOK_CLASS() {
 		});
 	};
 
-	this.statusChangeCallback = function(response) {
+	this.statusChangeCallback = function() {
 		FB.login(function(res) {
 	        if (res.status === 'connected') {
 	        	_self.postImage(res.authResponse.accessToken);
