@@ -7,6 +7,7 @@
 <meta name="keywords" content="photo, image, picture, transparent, layers, free, edit, html5, canvas, javascript, online, photoshop, gimp, effects, sharpen, blur, magic wand tool, clone tool, rotate, resize, photoshop online, online tools, tilt shift, sprites, keypoints" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/jquery-ui.min.css" />
 <link rel="shortcut icon" href="img/favicon.png" />
 <!-- Google -->
 <meta itemprop="name" content="myBrush" />
@@ -26,35 +27,7 @@
 <meta property="og:image" content="https://mbrsh.com/editor/img/preview.png" />
 </head>
 <body>
-	<div id="fb-root"></div>
-	<script>
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=238932346615090";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<script>
-  		window.fbAsyncInit = function() {
-    	FB.init({
-      	appId      : '238932346615090',
-      	xfbml      : true,
-      	version    : 'v2.9'
-    	});
-
-    // ADD ADDITIONAL FACEBOOK CODE HERE
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+<div id="fb-root"></div>
 <div id="wrapper">
 
     <div id="sidebar_left">
@@ -312,9 +285,23 @@
 </div>
 <div style="display:none;" id="tmp"></div>
 <div id="popup"></div>
+<div id="facebook-post-dialog">
+	<b>Text:</b>
+	<br />
+	<input type="text" id="facebook-post-title" />
+	<br />
+	<br />
+	<img id="facebook-post-image" src="" width="570px;" />
+	<br />
+	<div class="facebook-post-submit">
+		<a href="#"><button class="facebook-post-button">Post</button></a>
+	</div>
+</div>
 
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/jquery/jquery-migrate.js"></script>
+<script src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="vendor/jquery/jquery-ui.min.js"></script>
 <script src="vendor/menu/menu.min.js"></script>
 <script src="vendor/imagefilters/imagefilters.min.js"></script>
 <script src="vendor/glfx/glfx.js"></script>
@@ -332,8 +319,10 @@
 <script src="vendor/hermite-resize/hermite.js"></script>
 <script src="vendor/gif.js/dist/gif.js"></script>
 <script src="vendor/gif.js/dist/gif.worker.js"></script>
+<script src="vendor/watermark/jquery.watermark.min.js"></script>
 
 <script src="js/file.js"></script>
+<script src="js/facebook.js"></script>
 <script src="js/edit.js"></script>
 <script src="js/image.js"></script>
 <script src="js/layers.js"></script>
@@ -345,5 +334,24 @@
 <script src="js/help.js"></script>
 <script src="config.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId            : '238932346615090',
+			autoLogAppEvents : true,
+			xfbml            : true,
+			version          : 'v2.10'
+		});
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 </html>

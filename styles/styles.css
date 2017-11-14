@@ -851,3 +851,21 @@ label span{
 	}
 }
 /* ========================================================================== */
+
+/* ====== Facebook add post ================================================= */
+
+#facebook-post-title {
+	width: 100%;
+	text-transform: none;
+}
+
+.facebook-post-submit {
+	text-align: center;
+}
+
+.facebook-post-button {
+	background-color: steelblue;
+	color: #FFFFFF;
+}
+
+/* ========================================================================== */
