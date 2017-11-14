@@ -73,21 +73,33 @@ function FACEBOOK_CLASS() {
 			},
 			success: function(data) {
 				if (data && data.data && data.data.link) {
-					FB.api('/me/feed', 'POST', {
-						source: data.data.link,
-						access_token: token,
-						message: $('#facebook-post-title').val()
+					FB.api('/me/photos', 'POST', {
+						url: data.data.link,
+						access_token: token/*,
+						message: $('#facebook-post-title').val()*/
 					}, function(response) {
 						if (response)
 						{
-							$(this).removeAttr('disabled');
-							if (response.error)
-							{
-								alert(response.error.message);
-							}
-							else
-							{
-								alert('The image is successfully posted');
+							if (!response.error) {
+								FB.api('/me/feed', 'POST', {
+									object_attachment: response.id,
+									access_token: token,
+									message: $('#facebook-post-title').val()
+								}, function(response) {
+									if (response)
+									{
+										console.log(response);
+										$(this).removeAttr('disabled');
+										if (response.error)
+										{
+											alert(response.error.message);
+										}
+										else
+										{
+											alert('The image is successfully posted');
+										}
+									}
+								});
 							}
 						}
 					});
