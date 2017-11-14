@@ -50,11 +50,7 @@ function FACEBOOK_CLASS() {
 
 		$('.facebook-post-button').click(function(e) {
 			e.preventDefault();
-
-			$(this).attr('disabled', 'disabled');
-			FB.getLoginStatus(function(response) {
 		      	_self.statusChangeCallback(response);
-		    });
 		});
 	}();
 
