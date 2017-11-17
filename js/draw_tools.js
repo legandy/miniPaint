@@ -587,20 +587,21 @@ function DRAW_TOOLS_CLASS() {
 			color = edit_details.color;
 		}
 		if (type == 'click') {
-			POP.add({name: "text", title: "Text:", value: text, type: 'textarea'});
+			POP.add({name: "text", title: "Text:", value: text, type: 'text'});
+
+			POP.add({name: "family", title: "Font family:", values: ["Arial", "Courier", "Impact", "Helvetica", "Times New Roman", "Verdana", "Trebuchet MS", "Garamond", "Palatino", "Tahoma", "Andale Mono"], type: 'select'});
+			POP.add({name: "style", title: "Font style:", values: ["Normal", "Italic", "Bold", "Bold Italic"], type: 'select'});
+			
 			POP.add({name: "size", title: "Size:", value: size, range: [2, 1000], step: 2});
 			POP.add({name: "color", title: "Color:", value: color, type: "color"});
-			POP.add({name: "style", title: "Font style:", values: ["Normal", "Italic", "Bold", "Bold Italic"], type: 'select'});
-			POP.add({name: "family", title: "Font family:", values: ["Arial", "Courier", "Impact", "Helvetica", "Times New Roman", "Verdana", "Trebuchet MS", "Garamond", "Palatino", "Tahoma", "Andale Mono"], type: 'select'});
-			
 			POP.add({name: "pos_x", title: "Position X:", value: xx, range: [0, WIDTH], step: 1});
 			POP.add({name: "pos_y", title: "Position Y:", value: yy, range: [0, HEIGHT], step: 1});
 			
 			POP.add({name: "size_3d", title: "3D size:", value: 0, range: [0, 200]});
 			POP.add({name: "pos_3d", title: "3D position:", values: ["Top-left", "Top-right", "Bottom-left", "Bottom-right"], type: 'select'});
-			POP.add({name: "shadow", title: "Shadow:", values: ["No", "Yes"]});
-			POP.add({name: "shadow_blur", title: "Shadow blur:", value: 6, range: [1, 20]});
-			POP.add({name: "shadow_color", title: "Shadow color:", value: "#000000", type: "color"});
+			//POP.add({name: "shadow", title: "Shadow:", values: ["No", "Yes"]});
+			//POP.add({name: "shadow_blur", title: "Shadow blur:", value: 6, range: [1, 20]});
+			//POP.add({name: "shadow_color", title: "Shadow color:", value: "#000000", type: "color"});
 			POP.add({name: "fill_style", title: "Fill style:", values: ["Fill", "Stroke", "Both"], type: 'select'});
 			POP.add({name: "stroke_size", title: "Stroke size:", value: 1, range: [1, 100]});
 			POP.preview_in_main = true;

@@ -814,6 +814,7 @@ input[type="button"]{
 	cursor:move;
 	font-size: 24px;
 	font-weight: 400;
+	padding-left: 20px;
 }
 #popup td{
 	height:20px;
@@ -837,6 +838,23 @@ input[type="button"]{
 #popup input[type="text"], #popup input[type="number"], #popup textarea{
 	width:100%;
 }
+select {
+    margin: 4px 0;
+}
+th.trn {
+    float: left;
+    left: 20px;
+    position: relative;
+}
+
+input#pop_data_text {
+    background: #f2f4f8;
+    height: 40px;
+    border: 1px solid #e2e4e8;
+    font-size: 15px;
+    text-transform: none;
+}
+
 label span{
 	color:#777777;
 }
