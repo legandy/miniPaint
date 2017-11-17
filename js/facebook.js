@@ -13,7 +13,8 @@ function FACEBOOK_CLASS() {
 		$("#facebook-post-dialog").dialog({
 			autoOpen: false,
 			modal: true,
-			width: "600px"
+			width: "440px",
+			position: { my: "center", at: "top" }
 		});
 
 		var fbButtons = document.getElementsByClassName('post-to-facebook');
