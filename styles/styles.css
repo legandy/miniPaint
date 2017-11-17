@@ -868,13 +868,21 @@ label span{
 		clear:both;
 	}
 }
+input::placeholder {
+	color: #b2b4b8;
+	font-style: italic;
+  }
 /* ========================================================================== */
 
 /* ====== Facebook add post ================================================= */
 
 #facebook-post-title {
 	width: 100%;
-	text-transform: none;
+	background: #f2f4f8;
+    height: 40px;
+    border: 1px solid #e2e4e8;
+    font-size: 16px;
+    text-transform: none;
 }
 
 .facebook-post-submit {
@@ -884,6 +892,18 @@ label span{
 .facebook-post-button {
 	background-color: steelblue;
 	color: #FFFFFF;
+	padding: 10px 20px;
+}
+
+.ui-widget-header {
+    border: 1px solid #fff;
+	background: #fff;
+}
+
+.ui-dialog {
+    border-radius: 6px;
+    -moz-box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.4);
 }
 
 /* ========================================================================== */
