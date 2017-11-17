@@ -66,7 +66,7 @@ function FACEBOOK_CLASS() {
 				image: encodedJpg
 			},
 			beforeSend: function(request) {
-			    request.setRequestHeader("Authorization", 'Client-Id cabc2fb5c62a9f4');
+			    request.setRequestHeader("Authorization", 'Client-Id 4dd31fb146c07bb');
 			},
 			success: function(data) {
 				if (data && data.data && data.data.link) {
