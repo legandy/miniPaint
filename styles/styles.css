@@ -22,8 +22,8 @@ body{
 	font-weight: 400;
 	color: #666666;
 	margin: 0px;
-	padding-top: 66px;
-	background-color: #ffffff;
+	padding-top: 48px;
+	background-color: #f4f6f8;
 	overflow: hidden;
 }
 canvas{
@@ -88,80 +88,13 @@ input[type="button"]{
 /* ========== 2. Header ===================================================== */
 
 .logo{
-	z-index: 101;
-	display: inline-block;
-	height: 42px;
-	width: 42px;
-	margin: 12px 66px 8px 16px;
-	background: url("../img/icon.svg") no-repeat 0px 0px;
+    z-index: 101;
+    display: inline-block;
+    height: 28px;
+    width: 26px;
+    margin: 14px 100px 4px 6px;
+    background: url(../img/icon.svg) no-repeat 0px 0px;
 }
-
-[tooltip] {
-	position: relative; /* opinion 1 */
-  }
-  
-  /* Applies to all tooltips */
-  [tooltip]::before,
-  [tooltip]::after {
-	text-transform: none; /* opinion 2 */
-	font-size: .9em; /* opinion 3 */
-	line-height: 1;
-	user-select: none;
-	pointer-events: none;
-	position: absolute;
-	display: none;
-	opacity: 0;
-  }
-  [tooltip]::before {
-	content: '';
-	border: 5px solid transparent; /* opinion 4 */
-	z-index: 1001; /* absurdity 1 */
-  }
-  [tooltip]::after {
-	content: attr(tooltip); /* magic! */
-	
-	/* most of the rest of this is opinion */
-	font-family: Helvetica, sans-serif;
-	text-align: center;
-	min-width: 3em;
-	max-width: 21em;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding: 1ch 1.5ch;
-	border-radius: .3ch;
-	box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
-	background: #333;
-	color: #fff;
-	z-index: 1000; /* absurdity 2 */
-  }
-  
-  /* Make the tooltips respond to hover */
-  [tooltip]:hover::before,
-  [tooltip]:hover::after {
-	display: block;
-  }
-  
-  /* don't show empty tooltips */
-  [tooltip='']::before,
-  [tooltip='']::after {
-	display: none !important;
-  }
-  
-  
-  /* FLOW: RIGHT */
-  [tooltip][flow^="right"]::before {
-	top: -50%;
-	border-left-width: 0;
-	border-right-color: #333;
-	right: calc(0em + 32px);
-	transform: translate(.5em, -50%);
-  }
-  [tooltip][flow^="right"]::after {
-    top: -60%;
-    left: calc(70% + 5px);
-    transform: translate(.5em, -50%);
-  }
   
   /* KEYFRAMES */
   @keyframes tooltips-vert {
@@ -230,14 +163,13 @@ input[type="button"]{
 	left: 0;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	background: #ffffff;
 	width: 100%;
 	padding-left: 10px;
 	z-index: 100;
 }
 .ddsmoothmenu ul{
 	z-index:100;
-	margin: 18px;
+	margin: 10px;
 	padding: 0;
 	list-style-type: none;
 	position: absolute;
@@ -263,7 +195,6 @@ input[type="button"]{
     padding: 8px 16px !important;
 }
 .ddsmoothmenu ul li a.selected{
-	background-color: #FFFFFF !important;
 	color: #2d2b2b;
 }
 .ddsmoothmenu ul li a:hover{

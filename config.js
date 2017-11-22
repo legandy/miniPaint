@@ -12,7 +12,7 @@ var canvas_preview = document.getElementById("canvas_preview").getContext("2d");
 
 //global settings
 var VERSION = '3.3.4';
-var WIDTH;						//canvas midth
+var WIDTH;						//canvas width
 var HEIGHT;						//canvas height
 var COLOR = '#1984bb';				//active color
 var ALPHA = 255;					//active color alpha
