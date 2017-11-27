@@ -589,7 +589,7 @@ function DRAW_TOOLS_CLASS() {
 		if (type == 'click') {
 			POP.add({name: "text", title: "Text:", value: text, type: 'text'});
 
-			POP.add({name: "family", title: "Font family:", values: ["Arial", "Courier", "Impact", "Helvetica", "Times New Roman", "Verdana", "Trebuchet MS", "Garamond", "Palatino", "Tahoma", "Andale Mono"], type: 'select'});
+			POP.add({name: "family", title: "Font family:", values: FONTS.fonts, type: 'select'});
 			POP.add({name: "style", title: "Font style:", values: ["Normal", "Italic", "Bold", "Bold Italic"], type: 'select'});
 			
 			POP.add({name: "size", title: "Size:", value: size, range: [2, 1000], step: 2});
