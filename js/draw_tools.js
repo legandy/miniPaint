@@ -597,8 +597,8 @@ function DRAW_TOOLS_CLASS() {
 			POP.add({name: "pos_x", title: "Position X:", value: xx, range: [0, WIDTH], step: 1});
 			POP.add({name: "pos_y", title: "Position Y:", value: yy, range: [0, HEIGHT], step: 1});
 			
-			POP.add({name: "size_3d", title: "3D size:", value: 0, range: [0, 200]});
-			POP.add({name: "pos_3d", title: "3D position:", values: ["Top-left", "Top-right", "Bottom-left", "Bottom-right"], type: 'select'});
+			//POP.add({name: "size_3d", title: "3D size:", value: 0, range: [0, 200]});
+			//POP.add({name: "pos_3d", title: "3D position:", values: ["Top-left", "Top-right", "Bottom-left", "Bottom-right"], type: 'select'});
 			//POP.add({name: "shadow", title: "Shadow:", values: ["No", "Yes"]});
 			//POP.add({name: "shadow_blur", title: "Shadow blur:", value: 6, range: [1, 20]});
 			//POP.add({name: "shadow_color", title: "Shadow color:", value: "#000000", type: "color"});
