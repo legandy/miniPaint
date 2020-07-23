@@ -8,7 +8,7 @@ Key features: layers, drag & drop, transparency, filters, no-flash, open source.
 
 myBrush operates directly in the browser. You can create images, paste from clipboard (ctrl+v) or upload from computer (using menu or drag & drop). Nothing will be sent to any server. Everything stays in your browser. 
 
-**Start using**: https://mbrsh.com/app/
+**Start using**: **https://mbrsh.com/app/
 
 ![myBrush](https://raw.githubusercontent.com/legandy/myBrush/master/img/preview.gif)
 
